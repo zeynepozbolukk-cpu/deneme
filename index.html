@@ -160,44 +160,45 @@ body::after{
   letter-spacing:.46em;
 }
 
+.heart-wrap{
+  margin-top:52px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:18px;
+}
+
 .heart{
-  margin-top:48px;
-  font-size:27px;
+  font-size:26px;
+  color:#1d1d1d;
 }
 
 .tap{
-  margin-top:112px;
-  font-size:13px;
-  line-height:2;
-  letter-spacing:.43em;
+  font-size:12px;
+  letter-spacing:.42em;
+  color:#8c7446;
+  text-align:center;
+
+  animation:blink 2s ease-in-out infinite;
 }
 
-.arrow{
-  margin-top:36px;
-  width:48px;
-  height:32px;
-  position:relative;
+@keyframes blink{
+
+  0%{
+    opacity:.25;
+  }
+
+  50%{
+    opacity:1;
+  }
+
+  100%{
+    opacity:.25;
+  }
+
 }
 
-.arrow::before,
-.arrow::after{
-  content:"";
-  position:absolute;
-  top:14px;
-  width:34px;
-  height:1px;
-  background:#a88c58;
-}
 
-.arrow::before{
-  left:-1px;
-  transform:rotate(45deg);
-}
-
-.arrow::after{
-  right:-1px;
-  transform:rotate(-45deg);
-}
 
 /* SITE */
 
